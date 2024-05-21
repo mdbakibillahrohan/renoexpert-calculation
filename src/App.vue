@@ -1,5 +1,35 @@
 <script setup>
+import { useRoute, useRouter } from "vue-router";
 import Navbar from "./components/Navbar.vue";
+import {step} from "./store";
+const router = useRouter();
+const next = ()=>{
+  if(step.value<3){
+    step.value++;
+  }
+  if(step.value===3){
+    router.push("/scope-of-work");
+    step.value++;
+  }
+  if(step.value===4){
+    router.push("/get-quote");
+    step.value++;
+  }
+}
+
+const previous = ()=>{
+  if(step.value<3 && step.value!=0){
+    step.value--;
+  }
+  if(step.value===4){
+    router.push("/scope-of-work");
+    step.value--;
+  }
+  if(step.value===5){
+    router.push("/get-quote");
+    step.value--;
+  }
+}
 </script>
 <template>
   <a-config-provider
@@ -15,6 +45,7 @@ import Navbar from "./components/Navbar.vue";
       <div class="flex gap-[1.563vw]">
         <button
           class="flex items-center gap-[1.198vw] py-[0.938vw] px-[1.51vw] border border-[#00000033] rounded-[5.938vw]"
+          @click="previous"
         >
           Back
           <svg
@@ -32,6 +63,7 @@ import Navbar from "./components/Navbar.vue";
         </button>
         <button
           class="flex items-center gap-[1.198vw] py-[0.938vw] px-[1.51vw] border border-[#00000033] rounded-[5.938vw]"
+          @click="next"
         >
           Next
           <svg

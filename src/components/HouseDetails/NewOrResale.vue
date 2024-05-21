@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="h-[70vh] min-h-[400px] flex justify-center items-center">
+  <div class="min-h-[400px] flex justify-center items-center">
     <div class="">
       <h2 class="text-center text-[2.24vw] mb-[3.281vw]">
         Is it a new or resale unit?
