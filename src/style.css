@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Transducer Test Regular";
+    src: url("/public/fonts/TransducerTest-Regular-BF645c3dd843c3b.otf")
+      format("opentype");
+  }
+
+  * {
+    font-family: "Transducer Test Regular";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

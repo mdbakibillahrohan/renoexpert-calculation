@@ -1,3 +1,12 @@
+<script setup>
+import {onMounted} from "vue";
+import {step} from "../store";
+onMounted(()=>{
+    step.value = 5;
+})
+
+</script>
+
 <template>
     <div class="h-[70vh] min-h-[400px] flex justify-center items-center">
         <div class="">

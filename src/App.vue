@@ -10,11 +10,11 @@ const next = ()=>{
   if(step.value===3){
     router.push("/scope-of-work");
     step.value++;
-  }
-  if(step.value===4){
+  }else if(step.value===4){
     router.push("/get-quote");
     step.value++;
   }
+  console.log(step.value);
 }
 
 const previous = ()=>{
@@ -22,11 +22,11 @@ const previous = ()=>{
     step.value--;
   }
   if(step.value===4){
-    router.push("/scope-of-work");
-    step.value--;
+    router.push("/house-details");
+    step.value = step.value - 2;
   }
   if(step.value===5){
-    router.push("/get-quote");
+    router.push("/scope-of-work");
     step.value--;
   }
 }
@@ -41,7 +41,7 @@ const previous = ()=>{
   >
     <Navbar />
     <RouterView />
-    <div class="flex justify-center w-full">
+    <div class="flex justify-center w-full mb-[5.208vw] mt-[4.01vw]">
       <div class="flex gap-[1.563vw]">
         <button
           class="flex items-center gap-[1.198vw] py-[0.938vw] px-[1.51vw] border border-[#00000033] rounded-[5.938vw]"

@@ -4,7 +4,7 @@ import CounterTile from "../../components/others/CounterTile.vue";
 <template>
   <div class="min-h-[400px] flex justify-center items-center">
     <div class="">
-      <h2 class="text-center text-[2.24vw] mb-[3.281vw] mt-[4.844vw]">
+      <h2 class="text-center text-[2.24vw] mb-[3.281vw]">
         Choose the rooms you want to renovate
       </h2>
       <div class="">

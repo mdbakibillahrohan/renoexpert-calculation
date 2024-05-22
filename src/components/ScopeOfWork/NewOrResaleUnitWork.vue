@@ -59,7 +59,7 @@ const selected = ref(0);
 
                 <div class="border-[2px] border-[#291E18] w-[62.604vw] rounded-[0.781vw] p-[1.667vw] flex items-center justify-between">
                         <div class="flex gap-[2.76vw]  items-center">
-                            <img class="w-[5.20vw] aspect-[84/68]" src="/public/carpentry-icon.png" alt="">
+                            <img class="w-[5.20vw] aspect-[84/68]" src="/public/ceiling_and_partition_icon.png" alt="">
                             <span class="text-[1.875vw]">Ceiling and Partition</span>
                         </div>
                         <div>
@@ -69,7 +69,7 @@ const selected = ref(0);
 
                     <div class="border-[2px] border-[#291E18] w-[62.604vw] rounded-[0.781vw] p-[1.667vw] flex items-center justify-between">
                         <div class="flex gap-[2.76vw]  items-center">
-                            <img class="w-[5.20vw] aspect-[84/68]" src="/public/carpentry-icon.png" alt="">
+                            <img class="w-[5.20vw] aspect-[84/68]" src="/public/floring_works_icon.png" alt="">
                             <span class="text-[1.875vw]">Flooring Works</span>
                         </div>
                         <div>

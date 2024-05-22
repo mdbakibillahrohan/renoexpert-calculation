@@ -8,6 +8,10 @@ import ScopeOfWork from "./pages/ScopeOfWork.vue";
 import GetQuote from "./pages/GetQuote.vue";
 const routes = [
   {
+    path: "",
+    redirect: "/house-details"
+  },
+  {
     path: "/house-details",
     component: HouseDetails,
   },
